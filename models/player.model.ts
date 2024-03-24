@@ -7,14 +7,17 @@ export interface Player {
   lastname: string
   image: Image
   ranking: number
+  slug: string
   competition: Array<Competition>
 }
 
 export interface PlayerResponse {
-    data: Player[]
+    data: Player
     meta: Meta
 }
 
 export interface PlayersResponse {
-    data: Player
+    data: Player[]
+    meta: Meta
 }
+
